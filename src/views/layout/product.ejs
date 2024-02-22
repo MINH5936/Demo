@@ -1,0 +1,55 @@
+<style type="text/css"> 
+  .product-car{
+    width: fit-content;
+    height: 510px;
+    padding: 30px;
+    border: 5px solid #BED1CF;
+    border-radius: 20px;
+    background-color: #FFF7F1;
+  }
+
+  .img-car{
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+  }
+  .name{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #FF8080;
+  }
+  .price{
+    text-align: right;
+    margin-right: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF8911;
+  }
+  .btn-detail{
+    border: 4px solid #FF8911;
+    border-radius: 35px;
+    padding: 10px 24px;
+    background-color: #FFF7F1;
+    
+  }
+  .btn-detail > a{
+    text-decoration: none;
+    color: #FF8911;
+   
+  }
+  .icon-next {
+    margin-left: 10px;
+    
+  }
+
+</style>
+
+<div class="product-car mt-4">
+    <img class="img-car" src="<%= car.imageCar %>" alt="">
+    <p class="name mt-3"><%= car.nameCar %></p>
+    <p class="price mt-3"><%= car.price %> VNĐ</p>
+    <div class="d-flex justify-content-center mt-4">
+        <button class="btn-detail"><a href="http://localhost:8080/car/detail/<%= car._id %>"> Xem chi tiết <i class="fa-solid fa-arrow-right icon-next"></i></a></button>
+    </div>
+</div>
